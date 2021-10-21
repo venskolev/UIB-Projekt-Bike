@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/563ef6f70b.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/266eebd455.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>Bike trips - Login</title>
+</head>
+
+<body>
+  <header>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-light shadow-lg sticky-lg-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <strong>Bike trips</strong>
+        </a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./booking.html">Booking calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#booking">Offer Bike trips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#news-events">News & Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#about">About</a>
+            </li>
+            <li class="nav-item  active">
+              <a class="nav-link" href="./login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Login/Register start-->
+   
+    <section id="login">
+      <div class="alert .alert-light h-75 mx-auto text-center h1 shadow-lg">
+        
+        <strong>Login</strong> & Register
+      </div>
+      <!-- Begin here -->
+    <!--   background color login -->
+    
+    <div class="bg-login">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card border-0 shadow rounded-3 my-5">
+            <div class="card-body p-4 p-sm-5">
+              <h5 class=" fs-1 fw-bold card-title text-center mb-5 fw-light fs-5">Sign In</h5>
+              <form>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+  
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                  <label class="form-check-label" for="rememberPasswordCheck">
+                    Remember password
+                  </label>
+                </div>
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
+                    in</button>
+                </div>
+                <hr class="my-4">
+                <div class="d-grid mb-2">
+                  <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">
+                    <i class="fab fa-google me-2"></i> Sign in with Google
+                  </button>
+                </div>
+                <div class="d-grid">
+                  <button class="btn btn-facebook btn-login text-uppercase fw-bold" type="submit">
+                    <i class="fab fa-facebook-f me-2"></i> Sign in with Facebook
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="bg-light mt-5 p-3">
+      <div class="list-inline-item">
+        <div class="m-lg-3">
+          <h5 class="text-secondary pt-3">
+            Bike Trips
+          </h5>
+          <p class="copyright-text mb-0">Copyright © Bike Trips 2021
+        </div>
+        <div class="d-inline social">
+          <a href="#" class="fab fa-facebook"> Bike trips in Facebook</a>
+          <a href="#" class="fab fa-whatsapp"> Call us in Wathsapp</a>
+          <a href="#" class="fab fa-instagram"> Follow us</a>
+          <a href="#" class="fab fa-youtube"> Video in Youtube</a>
+          <a href="#" class="fab fa-twitter"> Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Button go to Top-->
+  <button onclick="topFunction()" id="myTop" title="Go to top">Top</button>
+  <!-- JavScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myTop");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>

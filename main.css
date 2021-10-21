@@ -1,0 +1,222 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#about,
+#news-events,
+#contact {
+    scroll-margin: 3rem;
+}
+
+#myTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#myTop:hover {
+    background-color: #555;
+}
+
+.custom-underline {
+    border-bottom: 2px solid var(--white-color);
+    color: var(--white-color);
+    padding-bottom: 4px;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+    z-index: -100;
+}
+
+.custom-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+    .hero {
+        height: 100vh;
+    }
+
+    .custom-video,
+    .news-detail-image {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .sticky-wrapper {
+        position: relative;
+        bottom: 76px;
+    }
+}
+
+.heroText {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    text-align: center;
+}
+
+.bg-light {
+    padding-top: 0px;
+}
+
+.carousel-inner {
+    margin: 25px auto;
+    width: 1000px;
+    height: 600px;
+}
+
+.beweg-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.para-1 {
+    width: 1000px;
+    text-align: center;
+    text-align: justify;
+}
+
+.girl-bike {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.cart-3-imag {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.night-image {
+    display: flex;
+    justify-content: center;
+}
+
+.back-footer {
+    margin-top: 25px;
+    width: auto;
+    height: 350px;
+    background: #373941;
+    color: ivory;
+}
+
+.label {
+    font-size: 25px;
+}
+
+.site-footer {
+    width: 100%;
+}
+
+.social {
+    text-align: right;
+    font-size: smaller;
+    padding: 5px;
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    background-color: rgba(0, 128, 0, 0.384);
+    color: white;
+}
+
+.fa-facebook:hover {
+    color: white;
+    background-color: blue;
+}
+
+.fa-facebook {
+    color: blue;
+    background-color: white;
+}
+
+.fa-twitter:hover {
+    background-color: green;
+    color: white;
+}
+
+.fa-twitter {
+    background-color: white;
+    color: green;
+}
+
+.fa-whatsapp {
+    color: green;
+}
+
+.fa-instagram {
+    color: orange;
+}
+
+.fa-instagram:hover {
+    background-color: orange;
+    color: white;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-youtube:hover {
+    color: white;
+    background-color: red;
+}
+
+/* login section */
+.btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+}
+
+.btn-google {
+    color: white !important;
+    background-color: #ea4335;
+}
+
+.btn-facebook {
+    color: white !important;
+    background-color: #3b5998;
+}
+.bg-login {
+    background-image: url(./img/Canada-Invermere-Panorama-Resort-MTB-Enduro-Travel-041-cb-3384-1140x760.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
