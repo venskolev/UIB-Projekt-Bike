@@ -89,9 +89,8 @@ html {
 }
 
 .carousel-inner {
-    margin: 25px auto;
-    width: 1000px;
-    height: 600px;
+    margin: auto;
+    width: 1200px;
 }
 
 .beweg-1 {
@@ -222,10 +221,10 @@ a:active {
 }
 /* Shop CSS */
 .carousel-wiht {
-    height: 78vh;
+    height: 88vh;
     width: auto;
     margin: auto;
-    background-image: url();
+    margin-left: 25rem;
 }
 
 .product-card {
