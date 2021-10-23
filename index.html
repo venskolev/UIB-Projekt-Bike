@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/266eebd455.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="main.css">
   <title>Bike trips</title>
 </head>
@@ -39,38 +40,22 @@
   </header>
   <main>
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg bg-light shadow-lg sticky-lg-top">
+    <nav id="navBar" class="topnav shadow-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <strong>Bike trips</strong>
             </a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#hero">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./shop.html">Shop</a>
-                    </li><li class="nav-item">
-                        <a class="nav-link" href="./booking.html">Booking calendar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#booking">Offer Bike trips</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#news-events">News & Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./login.html">Login</a>
-                    </li>
-                </ul>
-            </div>
+            <a class="nav-link" href="#hero">Home</a>
+            <a class="nav-link" href="./shop.html">Shop</a>
+            <a class="nav-link" href="./booking.html">Booking calendar</a>
+            <a class="nav-link" href="#booking">Offer Bike trips</a>
+            <a class="nav-link" href="#news-events">News & Events</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="./login.html">Login</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
         </div>
     </nav>
       <div class="container mb-5 pb-lg-5">
@@ -449,5 +434,15 @@ function topFunction() {
 }
 </script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script>
+function myFunction() {
+  var x = document.getElementById("navBar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>

@@ -12,52 +12,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/266eebd455.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="main.css">
   <title>Bike trips - Shop</title>
 </head>
 <body>
 <header>
         <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg bg-light shadow-lg fixed-top">
+    <nav id="navBar" class="topnav shadow-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <strong>Bike trips</strong>
             </a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./shop.html">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./booking.html">Booking calendar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#booking">Offer Bike trips</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#news-events">News & Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./login.html">Login</a>
-                    </li>
-                </ul>
-            </div>
+            <a class="nav-link" href="#hero">Home</a>
+            <a class="nav-link" href="./shop.html">Shop</a>
+            <a class="nav-link" href="./booking.html">Booking calendar</a>
+            <a class="nav-link" href="./index.html#booking">Offer Bike trips</a>
+            <a class="nav-link" href="./index.html#news-events">News & Events</a>
+            <a class="nav-link" href="./index.html#contact">Contact</a>
+            <a class="nav-link" href="./index.html#about">About</a>
+            <a class="nav-link" href="./login.html">Login</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
         </div>
     </nav>
 </header>
 <main>
 <!-- Carousel -->
-<div class="d-flex justify-content-center m-lg-3">
-    <div class="carousel-wiht">
+<div class="carousel-box">
+    <div class="d-flex justify-content-center m-lg-3 carousel-wiht">
     <div id="carouselExampleIndicators" class="carousel slide 6s right" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
