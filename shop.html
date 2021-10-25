@@ -21,8 +21,9 @@
         <!-- Navigation -->
     <nav id="navBar" class="topnav shadow-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <strong>Bike trips</strong>
+            <a id="logo" href="index.html">
+                <figure><lottie-player src="https://assets9.lottiefiles.com/packages/lf20_sgnacf85.json"  background="transparent"  speed="1"  style="width: 50px; height: 20px;"  loop  autoplay></lottie-player>
+              </figure>
             </a>
             <a class="nav-link" href="./index.html#hero">Home</a>
             <a class="nav-link" href="./shop.html">Shop</a>
@@ -327,5 +328,15 @@ function topFunction() {
 </script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.10.0/feather.js"></script>
+<script>
+function myFunction() {
+  var x = document.getElementById("navBar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>
